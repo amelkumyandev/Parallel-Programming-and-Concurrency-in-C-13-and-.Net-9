@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DotNetty.Common" Version="0.7.6" />
+    <PackageReference Include="IKVM" Version="8.10.3" />
+    <PackageReference Include="IKVM.OpenJDK.Core" Version="7.2.4630.5" />
+    <PackageReference Include="IKVM.OpenJDK.Util" Version="7.2.4630.5" />
+  </ItemGroup>
+
+</Project>

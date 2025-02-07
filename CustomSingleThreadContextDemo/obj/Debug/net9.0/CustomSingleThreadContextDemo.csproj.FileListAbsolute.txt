@@ -1,0 +1,14 @@
+C:\Users\amelkumyan\source\repos\ParallelProgrammingAndConcurrency\CustomSingleThreadContextDemo\obj\Debug\net9.0\CustomSingleThreadContextDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\amelkumyan\source\repos\ParallelProgrammingAndConcurrency\CustomSingleThreadContextDemo\obj\Debug\net9.0\CustomSingleThreadContextDemo.AssemblyInfoInputs.cache
+C:\Users\amelkumyan\source\repos\ParallelProgrammingAndConcurrency\CustomSingleThreadContextDemo\obj\Debug\net9.0\CustomSingleThreadContextDemo.AssemblyInfo.cs
+C:\Users\amelkumyan\source\repos\ParallelProgrammingAndConcurrency\CustomSingleThreadContextDemo\obj\Debug\net9.0\CustomSingleThreadContextDemo.csproj.CoreCompileInputs.cache
+C:\Users\amelkumyan\source\repos\ParallelProgrammingAndConcurrency\CustomSingleThreadContextDemo\bin\Debug\net9.0\CustomSingleThreadContextDemo.exe
+C:\Users\amelkumyan\source\repos\ParallelProgrammingAndConcurrency\CustomSingleThreadContextDemo\bin\Debug\net9.0\CustomSingleThreadContextDemo.deps.json
+C:\Users\amelkumyan\source\repos\ParallelProgrammingAndConcurrency\CustomSingleThreadContextDemo\bin\Debug\net9.0\CustomSingleThreadContextDemo.runtimeconfig.json
+C:\Users\amelkumyan\source\repos\ParallelProgrammingAndConcurrency\CustomSingleThreadContextDemo\bin\Debug\net9.0\CustomSingleThreadContextDemo.dll
+C:\Users\amelkumyan\source\repos\ParallelProgrammingAndConcurrency\CustomSingleThreadContextDemo\bin\Debug\net9.0\CustomSingleThreadContextDemo.pdb
+C:\Users\amelkumyan\source\repos\ParallelProgrammingAndConcurrency\CustomSingleThreadContextDemo\obj\Debug\net9.0\CustomSingleThreadContextDemo.dll
+C:\Users\amelkumyan\source\repos\ParallelProgrammingAndConcurrency\CustomSingleThreadContextDemo\obj\Debug\net9.0\refint\CustomSingleThreadContextDemo.dll
+C:\Users\amelkumyan\source\repos\ParallelProgrammingAndConcurrency\CustomSingleThreadContextDemo\obj\Debug\net9.0\CustomSingleThreadContextDemo.pdb
+C:\Users\amelkumyan\source\repos\ParallelProgrammingAndConcurrency\CustomSingleThreadContextDemo\obj\Debug\net9.0\CustomSingleThreadContextDemo.genruntimeconfig.cache
+C:\Users\amelkumyan\source\repos\ParallelProgrammingAndConcurrency\CustomSingleThreadContextDemo\obj\Debug\net9.0\ref\CustomSingleThreadContextDemo.dll

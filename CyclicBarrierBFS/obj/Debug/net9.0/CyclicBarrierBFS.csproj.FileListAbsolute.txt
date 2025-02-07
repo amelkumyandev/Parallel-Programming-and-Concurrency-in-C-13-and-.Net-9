@@ -1,0 +1,6 @@
+C:\Users\amelkumyan\source\repos\ParallelProgrammingAndConcurrency\CyclicBarrierBFS\obj\Debug\net9.0\CyclicBarrierBFS.csproj.IkvmFrameworkReference.cache
+C:\Users\amelkumyan\source\repos\ParallelProgrammingAndConcurrency\CyclicBarrierBFS\obj\Debug\net9.0\CyclicBarrierBFS.csproj.AssemblyReference.cache
+C:\Users\amelkumyan\source\repos\ParallelProgrammingAndConcurrency\CyclicBarrierBFS\obj\Debug\net9.0\CyclicBarrierBFS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\amelkumyan\source\repos\ParallelProgrammingAndConcurrency\CyclicBarrierBFS\obj\Debug\net9.0\CyclicBarrierBFS.AssemblyInfoInputs.cache
+C:\Users\amelkumyan\source\repos\ParallelProgrammingAndConcurrency\CyclicBarrierBFS\obj\Debug\net9.0\CyclicBarrierBFS.AssemblyInfo.cs
+C:\Users\amelkumyan\source\repos\ParallelProgrammingAndConcurrency\CyclicBarrierBFS\obj\Debug\net9.0\CyclicBarrierBFS.csproj.CoreCompileInputs.cache

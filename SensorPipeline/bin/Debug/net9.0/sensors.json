@@ -1,0 +1,22 @@
+[
+  {
+    "Id": "Sensor-1",
+    "Value": 22.5
+  },
+  {
+    "Id": "Sensor-2",
+    "Value": 18.3
+  },
+  {
+    "Id": "Sensor-3",
+    "Value": 30.1
+  },
+  {
+    "Id": "Sensor-4",
+    "Value": 25.6
+  },
+  {
+    "Id": "Sensor-5",
+    "Value": 27.8
+  }
+]

@@ -1,0 +1,303 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 4 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet  restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true /p:IntermediateOutputPath="C:\Users\amelkumyan\source\repos\ParallelProgrammingAndConcurrency\ConcurrentCollectionsBenchmark\bin\release\net9.0\3bd5efc9-4a1f-4b88-ac14-901631c7ef65\obj\Release\net9.0/" /p:OutDir="C:\Users\amelkumyan\source\repos\ParallelProgrammingAndConcurrency\ConcurrentCollectionsBenchmark\bin\release\net9.0\3bd5efc9-4a1f-4b88-ac14-901631c7ef65\bin\Release\net9.0/" /p:OutputPath="C:\Users\amelkumyan\source\repos\ParallelProgrammingAndConcurrency\ConcurrentCollectionsBenchmark\bin\release\net9.0\3bd5efc9-4a1f-4b88-ac14-901631c7ef65\bin\Release\net9.0/" in C:\Users\amelkumyan\source\repos\ParallelProgrammingAndConcurrency\ConcurrentCollectionsBenchmark\bin\release\net9.0\3bd5efc9-4a1f-4b88-ac14-901631c7ef65
+// command took 1.71 sec and exited with 0
+// start dotnet  build -c Release --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true /p:IntermediateOutputPath="C:\Users\amelkumyan\source\repos\ParallelProgrammingAndConcurrency\ConcurrentCollectionsBenchmark\bin\release\net9.0\3bd5efc9-4a1f-4b88-ac14-901631c7ef65\obj\Release\net9.0/" /p:OutDir="C:\Users\amelkumyan\source\repos\ParallelProgrammingAndConcurrency\ConcurrentCollectionsBenchmark\bin\release\net9.0\3bd5efc9-4a1f-4b88-ac14-901631c7ef65\bin\Release\net9.0/" /p:OutputPath="C:\Users\amelkumyan\source\repos\ParallelProgrammingAndConcurrency\ConcurrentCollectionsBenchmark\bin\release\net9.0\3bd5efc9-4a1f-4b88-ac14-901631c7ef65\bin\Release\net9.0/" --output "C:\Users\amelkumyan\source\repos\ParallelProgrammingAndConcurrency\ConcurrentCollectionsBenchmark\bin\release\net9.0\3bd5efc9-4a1f-4b88-ac14-901631c7ef65\bin\Release\net9.0/" in C:\Users\amelkumyan\source\repos\ParallelProgrammingAndConcurrency\ConcurrentCollectionsBenchmark\bin\release\net9.0\3bd5efc9-4a1f-4b88-ac14-901631c7ef65
+// command took 7.71 sec and exited with 0
+// ***** Done, took 00:00:09 (9.57 sec)   *****
+// Found 4 benchmarks:
+//   Benchmarks.ConcurrentDictionaryTest: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=1)
+//   Benchmarks.ConcurrentQueueTest: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=1)
+//   Benchmarks.BlockingCollectionTest: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=1)
+//   Benchmarks.LockedDictionaryTest: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=1)
+
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// **************************
+// Benchmark: Benchmarks.ConcurrentDictionaryTest: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=1)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet 3bd5efc9-4a1f-4b88-ac14-901631c7ef65.dll --anonymousPipes 1704 1492 --benchmarkName Benchmarks.ConcurrentDictionaryTest --job ShortRun --benchmarkId 0 in C:\Users\amelkumyan\source\repos\ParallelProgrammingAndConcurrency\ConcurrentCollectionsBenchmark\bin\release\net9.0\3bd5efc9-4a1f-4b88-ac14-901631c7ef65\bin\Release\net9.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.14.0
+// Runtime=.NET 9.0.0 (9.0.24.52809), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX-512F+CD+BW+DQ+VL+VBMI,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=1)
+
+OverheadJitting  1: 1 op, 339400.00 ns, 339.4000 us/op
+WorkloadJitting  1: 1 op, 204420100.00 ns, 204.4201 ms/op
+
+WorkloadPilot    1: 2 op, 82045200.00 ns, 41.0226 ms/op
+WorkloadPilot    2: 3 op, 120293100.00 ns, 40.0977 ms/op
+WorkloadPilot    3: 4 op, 168068600.00 ns, 42.0172 ms/op
+WorkloadPilot    4: 5 op, 74151900.00 ns, 14.8304 ms/op
+WorkloadPilot    5: 6 op, 84391600.00 ns, 14.0653 ms/op
+WorkloadPilot    6: 7 op, 99895100.00 ns, 14.2707 ms/op
+WorkloadPilot    7: 8 op, 117749300.00 ns, 14.7187 ms/op
+WorkloadPilot    8: 9 op, 134678100.00 ns, 14.9642 ms/op
+WorkloadPilot    9: 10 op, 93936300.00 ns, 9.3936 ms/op
+WorkloadPilot   10: 11 op, 89383600.00 ns, 8.1258 ms/op
+WorkloadPilot   11: 12 op, 95338600.00 ns, 7.9449 ms/op
+WorkloadPilot   12: 13 op, 105292400.00 ns, 8.0994 ms/op
+WorkloadPilot   13: 14 op, 108436000.00 ns, 7.7454 ms/op
+WorkloadPilot   14: 15 op, 119635700.00 ns, 7.9757 ms/op
+WorkloadPilot   15: 16 op, 133502600.00 ns, 8.3439 ms/op
+WorkloadPilot   16: 32 op, 256380300.00 ns, 8.0119 ms/op
+WorkloadPilot   17: 64 op, 540996300.00 ns, 8.4531 ms/op
+
+WorkloadWarmup   1: 64 op, 545055900.00 ns, 8.5165 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 64 op, 547818900.00 ns, 8.5597 ms/op
+WorkloadActual   2: 64 op, 548365500.00 ns, 8.5682 ms/op
+WorkloadActual   3: 64 op, 547719900.00 ns, 8.5581 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 64 op, 547818900.00 ns, 8.5597 ms/op
+WorkloadResult   2: 64 op, 548365500.00 ns, 8.5682 ms/op
+WorkloadResult   3: 64 op, 547719900.00 ns, 8.5581 ms/op
+// GC:  0 0 0 213408 64
+// Threading:  611 517 64
+
+// AfterAll
+// Benchmark Process 24712 has exited with code 0.
+
+Mean = 8.562 ms, StdErr = 0.003 ms (0.04%), N = 3, StdDev = 0.005 ms
+Min = 8.558 ms, Q1 = 8.559 ms, Median = 8.560 ms, Q3 = 8.564 ms, Max = 8.568 ms
+IQR = 0.005 ms, LowerFence = 8.551 ms, UpperFence = 8.572 ms
+ConfidenceInterval = [8.463 ms; 8.661 ms] (CI 99.9%), Margin = 0.099 ms (1.16% of Mean)
+Skewness = 0.35, Kurtosis = 0.67, MValue = 2
+
+// ** Remained 3 (75.0%) benchmark(s) to run. Estimated finish 2025-02-05 18:01 (0h 0m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// **************************
+// Benchmark: Benchmarks.ConcurrentQueueTest: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=1)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet 3bd5efc9-4a1f-4b88-ac14-901631c7ef65.dll --anonymousPipes 1384 628 --benchmarkName Benchmarks.ConcurrentQueueTest --job ShortRun --benchmarkId 1 in C:\Users\amelkumyan\source\repos\ParallelProgrammingAndConcurrency\ConcurrentCollectionsBenchmark\bin\release\net9.0\3bd5efc9-4a1f-4b88-ac14-901631c7ef65\bin\Release\net9.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.14.0
+// Runtime=.NET 9.0.0 (9.0.24.52809), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX-512F+CD+BW+DQ+VL+VBMI,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=1)
+
+OverheadJitting  1: 1 op, 207400.00 ns, 207.4000 us/op
+WorkloadJitting  1: 1 op, 103271300.00 ns, 103.2713 ms/op
+
+WorkloadPilot    1: 2 op, 176571300.00 ns, 88.2857 ms/op
+WorkloadPilot    2: 3 op, 240399600.00 ns, 80.1332 ms/op
+WorkloadPilot    3: 4 op, 306049500.00 ns, 76.5124 ms/op
+WorkloadPilot    4: 5 op, 383726000.00 ns, 76.7452 ms/op
+WorkloadPilot    5: 6 op, 460164200.00 ns, 76.6940 ms/op
+WorkloadPilot    6: 7 op, 537728900.00 ns, 76.8184 ms/op
+
+WorkloadWarmup   1: 7 op, 540142700.00 ns, 77.1632 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 7 op, 540181800.00 ns, 77.1688 ms/op
+WorkloadActual   2: 7 op, 540808800.00 ns, 77.2584 ms/op
+WorkloadActual   3: 7 op, 539987600.00 ns, 77.1411 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 7 op, 540181800.00 ns, 77.1688 ms/op
+WorkloadResult   2: 7 op, 540808800.00 ns, 77.2584 ms/op
+WorkloadResult   3: 7 op, 539987600.00 ns, 77.1411 ms/op
+// GC:  0 0 0 24200 7
+// Threading:  70 0 7
+
+// AfterAll
+// Benchmark Process 28984 has exited with code 0.
+
+Mean = 77.189 ms, StdErr = 0.035 ms (0.05%), N = 3, StdDev = 0.061 ms
+Min = 77.141 ms, Q1 = 77.155 ms, Median = 77.169 ms, Q3 = 77.214 ms, Max = 77.258 ms
+IQR = 0.059 ms, LowerFence = 77.067 ms, UpperFence = 77.302 ms
+ConfidenceInterval = [76.071 ms; 78.308 ms] (CI 99.9%), Margin = 1.119 ms (1.45% of Mean)
+Skewness = 0.3, Kurtosis = 0.67, MValue = 2
+
+// ** Remained 2 (50.0%) benchmark(s) to run. Estimated finish 2025-02-05 18:01 (0h 0m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// **************************
+// Benchmark: Benchmarks.BlockingCollectionTest: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=1)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet 3bd5efc9-4a1f-4b88-ac14-901631c7ef65.dll --anonymousPipes 1340 2072 --benchmarkName Benchmarks.BlockingCollectionTest --job ShortRun --benchmarkId 2 in C:\Users\amelkumyan\source\repos\ParallelProgrammingAndConcurrency\ConcurrentCollectionsBenchmark\bin\release\net9.0\3bd5efc9-4a1f-4b88-ac14-901631c7ef65\bin\Release\net9.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.14.0
+// Runtime=.NET 9.0.0 (9.0.24.52809), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX-512F+CD+BW+DQ+VL+VBMI,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=1)
+
+OverheadJitting  1: 1 op, 308300.00 ns, 308.3000 us/op
+WorkloadJitting  1: 1 op, 321531700.00 ns, 321.5317 ms/op
+
+WorkloadPilot    1: 2 op, 557672500.00 ns, 278.8363 ms/op
+
+WorkloadWarmup   1: 2 op, 506046500.00 ns, 253.0233 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 2 op, 520874100.00 ns, 260.4371 ms/op
+WorkloadActual   2: 2 op, 533672800.00 ns, 266.8364 ms/op
+WorkloadActual   3: 2 op, 524958300.00 ns, 262.4792 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 2 op, 520874100.00 ns, 260.4371 ms/op
+WorkloadResult   2: 2 op, 533672800.00 ns, 266.8364 ms/op
+WorkloadResult   3: 2 op, 524958300.00 ns, 262.4792 ms/op
+// GC:  0 0 0 7808 2
+// Threading:  24 6218 2
+
+// AfterAll
+// Benchmark Process 20832 has exited with code 0.
+
+Mean = 263.251 ms, StdErr = 1.887 ms (0.72%), N = 3, StdDev = 3.269 ms
+Min = 260.437 ms, Q1 = 261.458 ms, Median = 262.479 ms, Q3 = 264.658 ms, Max = 266.836 ms
+IQR = 3.200 ms, LowerFence = 256.659 ms, UpperFence = 269.457 ms
+ConfidenceInterval = [203.617 ms; 322.885 ms] (CI 99.9%), Margin = 59.634 ms (22.65% of Mean)
+Skewness = 0.22, Kurtosis = 0.67, MValue = 2
+
+// ** Remained 1 (25.0%) benchmark(s) to run. Estimated finish 2025-02-05 18:01 (0h 0m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// **************************
+// Benchmark: Benchmarks.LockedDictionaryTest: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=1)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet 3bd5efc9-4a1f-4b88-ac14-901631c7ef65.dll --anonymousPipes 1968 2112 --benchmarkName Benchmarks.LockedDictionaryTest --job ShortRun --benchmarkId 3 in C:\Users\amelkumyan\source\repos\ParallelProgrammingAndConcurrency\ConcurrentCollectionsBenchmark\bin\release\net9.0\3bd5efc9-4a1f-4b88-ac14-901631c7ef65\bin\Release\net9.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.14.0
+// Runtime=.NET 9.0.0 (9.0.24.52809), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX-512F+CD+BW+DQ+VL+VBMI,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=1)
+
+OverheadJitting  1: 1 op, 199800.00 ns, 199.8000 us/op
+WorkloadJitting  1: 1 op, 120443000.00 ns, 120.4430 ms/op
+
+WorkloadPilot    1: 2 op, 228743800.00 ns, 114.3719 ms/op
+WorkloadPilot    2: 3 op, 408208900.00 ns, 136.0696 ms/op
+WorkloadPilot    3: 4 op, 416473200.00 ns, 104.1183 ms/op
+WorkloadPilot    4: 5 op, 549559100.00 ns, 109.9118 ms/op
+
+WorkloadWarmup   1: 5 op, 529840500.00 ns, 105.9681 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 5 op, 537474800.00 ns, 107.4950 ms/op
+WorkloadActual   2: 5 op, 535642400.00 ns, 107.1285 ms/op
+WorkloadActual   3: 5 op, 589487200.00 ns, 117.8974 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 5 op, 537474800.00 ns, 107.4950 ms/op
+WorkloadResult   2: 5 op, 535642400.00 ns, 107.1285 ms/op
+WorkloadResult   3: 5 op, 589487200.00 ns, 117.8974 ms/op
+// GC:  0 0 0 17528 5
+// Threading:  50 3973 5
+
+// AfterAll
+// Benchmark Process 28784 has exited with code 0.
+
+Mean = 110.840 ms, StdErr = 3.530 ms (3.18%), N = 3, StdDev = 6.114 ms
+Min = 107.128 ms, Q1 = 107.312 ms, Median = 107.495 ms, Q3 = 112.696 ms, Max = 117.897 ms
+IQR = 5.384 ms, LowerFence = 99.235 ms, UpperFence = 120.773 ms
+ConfidenceInterval = [-0.709 ms; 222.390 ms] (CI 99.9%), Margin = 111.550 ms (100.64% of Mean)
+Skewness = 0.38, Kurtosis = 0.67, MValue = 2
+
+// ** Remained 0 (0.0%) benchmark(s) to run. Estimated finish 2025-02-05 18:01 (0h 0m from now) **
+Successfully reverted power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts\results\Benchmarks-report.csv
+  BenchmarkDotNet.Artifacts\results\Benchmarks-report-github.md
+  BenchmarkDotNet.Artifacts\results\Benchmarks-report.html
+
+// * Detailed results *
+Benchmarks.ConcurrentDictionaryTest: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=1)
+Runtime = .NET 9.0.0 (9.0.24.52809), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI; GC = Concurrent Workstation
+Mean = 8.562 ms, StdErr = 0.003 ms (0.04%), N = 3, StdDev = 0.005 ms
+Min = 8.558 ms, Q1 = 8.559 ms, Median = 8.560 ms, Q3 = 8.564 ms, Max = 8.568 ms
+IQR = 0.005 ms, LowerFence = 8.551 ms, UpperFence = 8.572 ms
+ConfidenceInterval = [8.463 ms; 8.661 ms] (CI 99.9%), Margin = 0.099 ms (1.16% of Mean)
+Skewness = 0.35, Kurtosis = 0.67, MValue = 2
+-------------------- Histogram --------------------
+[8.553 ms ; 8.573 ms) | @@@
+---------------------------------------------------
+
+Benchmarks.ConcurrentQueueTest: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=1)
+Runtime = .NET 9.0.0 (9.0.24.52809), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI; GC = Concurrent Workstation
+Mean = 77.189 ms, StdErr = 0.035 ms (0.05%), N = 3, StdDev = 0.061 ms
+Min = 77.141 ms, Q1 = 77.155 ms, Median = 77.169 ms, Q3 = 77.214 ms, Max = 77.258 ms
+IQR = 0.059 ms, LowerFence = 77.067 ms, UpperFence = 77.302 ms
+ConfidenceInterval = [76.071 ms; 78.308 ms] (CI 99.9%), Margin = 1.119 ms (1.45% of Mean)
+Skewness = 0.3, Kurtosis = 0.67, MValue = 2
+-------------------- Histogram --------------------
+[77.085 ms ; 77.314 ms) | @@@
+---------------------------------------------------
+
+Benchmarks.BlockingCollectionTest: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=1)
+Runtime = .NET 9.0.0 (9.0.24.52809), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI; GC = Concurrent Workstation
+Mean = 263.251 ms, StdErr = 1.887 ms (0.72%), N = 3, StdDev = 3.269 ms
+Min = 260.437 ms, Q1 = 261.458 ms, Median = 262.479 ms, Q3 = 264.658 ms, Max = 266.836 ms
+IQR = 3.200 ms, LowerFence = 256.659 ms, UpperFence = 269.457 ms
+ConfidenceInterval = [203.617 ms; 322.885 ms] (CI 99.9%), Margin = 59.634 ms (22.65% of Mean)
+Skewness = 0.22, Kurtosis = 0.67, MValue = 2
+-------------------- Histogram --------------------
+[258.483 ms ; 264.433 ms) | @@
+[264.433 ms ; 269.811 ms) | @
+---------------------------------------------------
+
+Benchmarks.LockedDictionaryTest: ShortRun(IterationCount=3, LaunchCount=1, WarmupCount=1)
+Runtime = .NET 9.0.0 (9.0.24.52809), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI; GC = Concurrent Workstation
+Mean = 110.840 ms, StdErr = 3.530 ms (3.18%), N = 3, StdDev = 6.114 ms
+Min = 107.128 ms, Q1 = 107.312 ms, Median = 107.495 ms, Q3 = 112.696 ms, Max = 117.897 ms
+IQR = 5.384 ms, LowerFence = 99.235 ms, UpperFence = 120.773 ms
+ConfidenceInterval = [-0.709 ms; 222.390 ms] (CI 99.9%), Margin = 111.550 ms (100.64% of Mean)
+Skewness = 0.38, Kurtosis = 0.67, MValue = 2
+-------------------- Histogram --------------------
+[106.949 ms ; 118.077 ms) | @@@
+---------------------------------------------------
+
+// * Summary *
+
+BenchmarkDotNet v0.14.0, Windows 11 (10.0.26100.2894)
+11th Gen Intel Core i7-1165G7 2.80GHz, 1 CPU, 8 logical and 4 physical cores
+.NET SDK 9.0.100
+  [Host]   : .NET 9.0.0 (9.0.24.52809), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI
+  ShortRun : .NET 9.0.0 (9.0.24.52809), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI
+
+Job=ShortRun  IterationCount=3  LaunchCount=1  
+WarmupCount=1  
+
+| Method                   | Mean       | Error       | StdDev    | Allocated |
+|------------------------- |-----------:|------------:|----------:|----------:|
+| ConcurrentDictionaryTest |   8.562 ms |   0.0991 ms | 0.0054 ms |   3.26 KB |
+| ConcurrentQueueTest      |  77.189 ms |   1.1186 ms | 0.0613 ms |   3.38 KB |
+| BlockingCollectionTest   | 263.251 ms |  59.6338 ms | 3.2687 ms |   3.81 KB |
+| LockedDictionaryTest     | 110.840 ms | 111.5497 ms | 6.1144 ms |   3.42 KB |
+
+// * Legends *
+  Mean      : Arithmetic mean of all measurements
+  Error     : Half of 99.9% confidence interval
+  StdDev    : Standard deviation of all measurements
+  Allocated : Allocated memory per single operation (managed only, inclusive, 1KB = 1024B)
+  1 ms      : 1 Millisecond (0.001 sec)
+
+// * Diagnostic Output - MemoryDiagnoser *
+
+
+// ***** BenchmarkRunner: End *****
+Run time: 00:00:22 (22.42 sec), executed benchmarks: 4
+
+Global total time: 00:00:32 (32.37 sec), executed benchmarks: 4
+// * Artifacts cleanup *
+Artifacts cleanup is finished

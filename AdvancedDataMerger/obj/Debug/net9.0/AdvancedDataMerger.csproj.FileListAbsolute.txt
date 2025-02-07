@@ -1,0 +1,4 @@
+C:\Users\amelkumyan\source\repos\ParallelProgrammingAndConcurrency\AdvancedDataMerger\obj\Debug\net9.0\AdvancedDataMerger.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\amelkumyan\source\repos\ParallelProgrammingAndConcurrency\AdvancedDataMerger\obj\Debug\net9.0\AdvancedDataMerger.AssemblyInfoInputs.cache
+C:\Users\amelkumyan\source\repos\ParallelProgrammingAndConcurrency\AdvancedDataMerger\obj\Debug\net9.0\AdvancedDataMerger.AssemblyInfo.cs
+C:\Users\amelkumyan\source\repos\ParallelProgrammingAndConcurrency\AdvancedDataMerger\obj\Debug\net9.0\AdvancedDataMerger.csproj.CoreCompileInputs.cache

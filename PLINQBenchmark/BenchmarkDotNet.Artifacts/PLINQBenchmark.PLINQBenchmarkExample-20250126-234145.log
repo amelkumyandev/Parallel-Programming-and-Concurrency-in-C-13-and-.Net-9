@@ -1,0 +1,260 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 2 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet  restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true /p:IntermediateOutputPath="C:\Users\amelkumyan\source\repos\ParallelProgrammingAndConcurrency\PLINQBenchmark\bin\release\net9.0\fa8e230a-c006-486f-b338-7fc5be7406a9\obj\Release\net9.0/" /p:OutDir="C:\Users\amelkumyan\source\repos\ParallelProgrammingAndConcurrency\PLINQBenchmark\bin\release\net9.0\fa8e230a-c006-486f-b338-7fc5be7406a9\bin\Release\net9.0/" /p:OutputPath="C:\Users\amelkumyan\source\repos\ParallelProgrammingAndConcurrency\PLINQBenchmark\bin\release\net9.0\fa8e230a-c006-486f-b338-7fc5be7406a9\bin\Release\net9.0/" in C:\Users\amelkumyan\source\repos\ParallelProgrammingAndConcurrency\PLINQBenchmark\bin\release\net9.0\fa8e230a-c006-486f-b338-7fc5be7406a9
+// command took 1.18 sec and exited with 0
+// start dotnet  build -c Release --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true /p:IntermediateOutputPath="C:\Users\amelkumyan\source\repos\ParallelProgrammingAndConcurrency\PLINQBenchmark\bin\release\net9.0\fa8e230a-c006-486f-b338-7fc5be7406a9\obj\Release\net9.0/" /p:OutDir="C:\Users\amelkumyan\source\repos\ParallelProgrammingAndConcurrency\PLINQBenchmark\bin\release\net9.0\fa8e230a-c006-486f-b338-7fc5be7406a9\bin\Release\net9.0/" /p:OutputPath="C:\Users\amelkumyan\source\repos\ParallelProgrammingAndConcurrency\PLINQBenchmark\bin\release\net9.0\fa8e230a-c006-486f-b338-7fc5be7406a9\bin\Release\net9.0/" --output "C:\Users\amelkumyan\source\repos\ParallelProgrammingAndConcurrency\PLINQBenchmark\bin\release\net9.0\fa8e230a-c006-486f-b338-7fc5be7406a9\bin\Release\net9.0/" in C:\Users\amelkumyan\source\repos\ParallelProgrammingAndConcurrency\PLINQBenchmark\bin\release\net9.0\fa8e230a-c006-486f-b338-7fc5be7406a9
+// command took 5.17 sec and exited with 0
+// ***** Done, took 00:00:06 (6.42 sec)   *****
+// Found 2 benchmarks:
+//   PLINQBenchmarkExample.SequentialComputation: DefaultJob
+//   PLINQBenchmarkExample.ParallelComputation: DefaultJob
+
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// **************************
+// Benchmark: PLINQBenchmarkExample.SequentialComputation: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet fa8e230a-c006-486f-b338-7fc5be7406a9.dll --anonymousPipes 1624 1584 --benchmarkName PLINQBenchmark.PLINQBenchmarkExample.SequentialComputation --job Default --benchmarkId 0 in C:\Users\amelkumyan\source\repos\ParallelProgrammingAndConcurrency\PLINQBenchmark\bin\release\net9.0\fa8e230a-c006-486f-b338-7fc5be7406a9\bin\Release\net9.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.14.0
+// Runtime=.NET 9.0.0 (9.0.24.52809), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX-512F+CD+BW+DQ+VL+VBMI,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 213200.00 ns, 213.2000 us/op
+WorkloadJitting  1: 1 op, 853666500.00 ns, 853.6665 ms/op
+
+OverheadJitting  2: 1 op, 500.00 ns, 500.0000 ns/op
+WorkloadJitting  2: 1 op, 731924600.00 ns, 731.9246 ms/op
+
+WorkloadWarmup   1: 1 op, 708135500.00 ns, 708.1355 ms/op
+WorkloadWarmup   2: 1 op, 702205300.00 ns, 702.2053 ms/op
+WorkloadWarmup   3: 1 op, 702446400.00 ns, 702.4464 ms/op
+WorkloadWarmup   4: 1 op, 686507700.00 ns, 686.5077 ms/op
+WorkloadWarmup   5: 1 op, 688469200.00 ns, 688.4692 ms/op
+WorkloadWarmup   6: 1 op, 686264000.00 ns, 686.2640 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 700994100.00 ns, 700.9941 ms/op
+WorkloadActual   2: 1 op, 705890700.00 ns, 705.8907 ms/op
+WorkloadActual   3: 1 op, 734750800.00 ns, 734.7508 ms/op
+WorkloadActual   4: 1 op, 713092500.00 ns, 713.0925 ms/op
+WorkloadActual   5: 1 op, 695324400.00 ns, 695.3244 ms/op
+WorkloadActual   6: 1 op, 727666400.00 ns, 727.6664 ms/op
+WorkloadActual   7: 1 op, 701548900.00 ns, 701.5489 ms/op
+WorkloadActual   8: 1 op, 692332500.00 ns, 692.3325 ms/op
+WorkloadActual   9: 1 op, 734553700.00 ns, 734.5537 ms/op
+WorkloadActual  10: 1 op, 693536600.00 ns, 693.5366 ms/op
+WorkloadActual  11: 1 op, 691823800.00 ns, 691.8238 ms/op
+WorkloadActual  12: 1 op, 703709000.00 ns, 703.7090 ms/op
+WorkloadActual  13: 1 op, 690173900.00 ns, 690.1739 ms/op
+WorkloadActual  14: 1 op, 724965400.00 ns, 724.9654 ms/op
+WorkloadActual  15: 1 op, 686449500.00 ns, 686.4495 ms/op
+WorkloadActual  16: 1 op, 690437800.00 ns, 690.4378 ms/op
+WorkloadActual  17: 1 op, 690275300.00 ns, 690.2753 ms/op
+WorkloadActual  18: 1 op, 699143400.00 ns, 699.1434 ms/op
+WorkloadActual  19: 1 op, 731965500.00 ns, 731.9655 ms/op
+WorkloadActual  20: 1 op, 692897800.00 ns, 692.8978 ms/op
+WorkloadActual  21: 1 op, 701153500.00 ns, 701.1535 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 700994100.00 ns, 700.9941 ms/op
+WorkloadResult   2: 1 op, 705890700.00 ns, 705.8907 ms/op
+WorkloadResult   3: 1 op, 734750800.00 ns, 734.7508 ms/op
+WorkloadResult   4: 1 op, 713092500.00 ns, 713.0925 ms/op
+WorkloadResult   5: 1 op, 695324400.00 ns, 695.3244 ms/op
+WorkloadResult   6: 1 op, 727666400.00 ns, 727.6664 ms/op
+WorkloadResult   7: 1 op, 701548900.00 ns, 701.5489 ms/op
+WorkloadResult   8: 1 op, 692332500.00 ns, 692.3325 ms/op
+WorkloadResult   9: 1 op, 734553700.00 ns, 734.5537 ms/op
+WorkloadResult  10: 1 op, 693536600.00 ns, 693.5366 ms/op
+WorkloadResult  11: 1 op, 691823800.00 ns, 691.8238 ms/op
+WorkloadResult  12: 1 op, 703709000.00 ns, 703.7090 ms/op
+WorkloadResult  13: 1 op, 690173900.00 ns, 690.1739 ms/op
+WorkloadResult  14: 1 op, 724965400.00 ns, 724.9654 ms/op
+WorkloadResult  15: 1 op, 686449500.00 ns, 686.4495 ms/op
+WorkloadResult  16: 1 op, 690437800.00 ns, 690.4378 ms/op
+WorkloadResult  17: 1 op, 690275300.00 ns, 690.2753 ms/op
+WorkloadResult  18: 1 op, 699143400.00 ns, 699.1434 ms/op
+WorkloadResult  19: 1 op, 731965500.00 ns, 731.9655 ms/op
+WorkloadResult  20: 1 op, 692897800.00 ns, 692.8978 ms/op
+WorkloadResult  21: 1 op, 701153500.00 ns, 701.1535 ms/op
+// GC:  212 0 0 1335626056 1
+// Threading:  0 0 1
+
+// AfterAll
+// Benchmark Process 27236 has exited with code 0.
+
+Mean = 704.890 ms, StdErr = 3.533 ms (0.50%), N = 21, StdDev = 16.188 ms
+Min = 686.449 ms, Q1 = 692.332 ms, Median = 700.994 ms, Q3 = 713.092 ms, Max = 734.751 ms
+IQR = 20.760 ms, LowerFence = 661.192 ms, UpperFence = 744.232 ms
+ConfidenceInterval = [691.291 ms; 718.488 ms] (CI 99.9%), Margin = 13.599 ms (1.93% of Mean)
+Skewness = 0.77, Kurtosis = 2.01, MValue = 2.43
+
+// ** Remained 1 (50.0%) benchmark(s) to run. Estimated finish 2025-01-26 23:42 (0h 0m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// **************************
+// Benchmark: PLINQBenchmarkExample.ParallelComputation: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet fa8e230a-c006-486f-b338-7fc5be7406a9.dll --anonymousPipes 1668 1652 --benchmarkName PLINQBenchmark.PLINQBenchmarkExample.ParallelComputation --job Default --benchmarkId 1 in C:\Users\amelkumyan\source\repos\ParallelProgrammingAndConcurrency\PLINQBenchmark\bin\release\net9.0\fa8e230a-c006-486f-b338-7fc5be7406a9\bin\Release\net9.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.14.0
+// Runtime=.NET 9.0.0 (9.0.24.52809), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX-512F+CD+BW+DQ+VL+VBMI,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 183300.00 ns, 183.3000 us/op
+WorkloadJitting  1: 1 op, 851242000.00 ns, 851.2420 ms/op
+
+OverheadJitting  2: 1 op, 500.00 ns, 500.0000 ns/op
+WorkloadJitting  2: 1 op, 743273600.00 ns, 743.2736 ms/op
+
+WorkloadWarmup   1: 1 op, 726198800.00 ns, 726.1988 ms/op
+WorkloadWarmup   2: 1 op, 700018600.00 ns, 700.0186 ms/op
+WorkloadWarmup   3: 1 op, 711677100.00 ns, 711.6771 ms/op
+WorkloadWarmup   4: 1 op, 703647700.00 ns, 703.6477 ms/op
+WorkloadWarmup   5: 1 op, 697370500.00 ns, 697.3705 ms/op
+WorkloadWarmup   6: 1 op, 725976200.00 ns, 725.9762 ms/op
+WorkloadWarmup   7: 1 op, 747122000.00 ns, 747.1220 ms/op
+WorkloadWarmup   8: 1 op, 718360900.00 ns, 718.3609 ms/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 693793300.00 ns, 693.7933 ms/op
+WorkloadActual   2: 1 op, 710189100.00 ns, 710.1891 ms/op
+WorkloadActual   3: 1 op, 703915600.00 ns, 703.9156 ms/op
+WorkloadActual   4: 1 op, 720034200.00 ns, 720.0342 ms/op
+WorkloadActual   5: 1 op, 724677600.00 ns, 724.6776 ms/op
+WorkloadActual   6: 1 op, 744384100.00 ns, 744.3841 ms/op
+WorkloadActual   7: 1 op, 693141400.00 ns, 693.1414 ms/op
+WorkloadActual   8: 1 op, 703863700.00 ns, 703.8637 ms/op
+WorkloadActual   9: 1 op, 735536500.00 ns, 735.5365 ms/op
+WorkloadActual  10: 1 op, 698344900.00 ns, 698.3449 ms/op
+WorkloadActual  11: 1 op, 740027600.00 ns, 740.0276 ms/op
+WorkloadActual  12: 1 op, 721619400.00 ns, 721.6194 ms/op
+WorkloadActual  13: 1 op, 689786100.00 ns, 689.7861 ms/op
+WorkloadActual  14: 1 op, 703114800.00 ns, 703.1148 ms/op
+WorkloadActual  15: 1 op, 706755600.00 ns, 706.7556 ms/op
+WorkloadActual  16: 1 op, 717493300.00 ns, 717.4933 ms/op
+WorkloadActual  17: 1 op, 737458700.00 ns, 737.4587 ms/op
+WorkloadActual  18: 1 op, 701246800.00 ns, 701.2468 ms/op
+WorkloadActual  19: 1 op, 728784900.00 ns, 728.7849 ms/op
+WorkloadActual  20: 1 op, 766227400.00 ns, 766.2274 ms/op
+WorkloadActual  21: 1 op, 702532000.00 ns, 702.5320 ms/op
+WorkloadActual  22: 1 op, 719542400.00 ns, 719.5424 ms/op
+WorkloadActual  23: 1 op, 693169600.00 ns, 693.1696 ms/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 693793300.00 ns, 693.7933 ms/op
+WorkloadResult   2: 1 op, 710189100.00 ns, 710.1891 ms/op
+WorkloadResult   3: 1 op, 703915600.00 ns, 703.9156 ms/op
+WorkloadResult   4: 1 op, 720034200.00 ns, 720.0342 ms/op
+WorkloadResult   5: 1 op, 724677600.00 ns, 724.6776 ms/op
+WorkloadResult   6: 1 op, 744384100.00 ns, 744.3841 ms/op
+WorkloadResult   7: 1 op, 693141400.00 ns, 693.1414 ms/op
+WorkloadResult   8: 1 op, 703863700.00 ns, 703.8637 ms/op
+WorkloadResult   9: 1 op, 735536500.00 ns, 735.5365 ms/op
+WorkloadResult  10: 1 op, 698344900.00 ns, 698.3449 ms/op
+WorkloadResult  11: 1 op, 740027600.00 ns, 740.0276 ms/op
+WorkloadResult  12: 1 op, 721619400.00 ns, 721.6194 ms/op
+WorkloadResult  13: 1 op, 689786100.00 ns, 689.7861 ms/op
+WorkloadResult  14: 1 op, 703114800.00 ns, 703.1148 ms/op
+WorkloadResult  15: 1 op, 706755600.00 ns, 706.7556 ms/op
+WorkloadResult  16: 1 op, 717493300.00 ns, 717.4933 ms/op
+WorkloadResult  17: 1 op, 737458700.00 ns, 737.4587 ms/op
+WorkloadResult  18: 1 op, 701246800.00 ns, 701.2468 ms/op
+WorkloadResult  19: 1 op, 728784900.00 ns, 728.7849 ms/op
+WorkloadResult  20: 1 op, 702532000.00 ns, 702.5320 ms/op
+WorkloadResult  21: 1 op, 719542400.00 ns, 719.5424 ms/op
+WorkloadResult  22: 1 op, 693169600.00 ns, 693.1696 ms/op
+// GC:  212 0 0 1335626304 1
+// Threading:  0 0 1
+
+// AfterAll
+// Benchmark Process 13884 has exited with code 0.
+
+Mean = 713.155 ms, StdErr = 3.562 ms (0.50%), N = 22, StdDev = 16.707 ms
+Min = 689.786 ms, Q1 = 701.568 ms, Median = 708.472 ms, Q3 = 723.913 ms, Max = 744.384 ms
+IQR = 22.345 ms, LowerFence = 668.051 ms, UpperFence = 757.430 ms
+ConfidenceInterval = [699.551 ms; 726.759 ms] (CI 99.9%), Margin = 13.604 ms (1.91% of Mean)
+Skewness = 0.36, Kurtosis = 1.76, MValue = 2
+
+// ** Remained 0 (0.0%) benchmark(s) to run. Estimated finish 2025-01-26 23:42 (0h 0m from now) **
+Successfully reverted power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts\results\PLINQBenchmark.PLINQBenchmarkExample-report.csv
+  BenchmarkDotNet.Artifacts\results\PLINQBenchmark.PLINQBenchmarkExample-report-github.md
+  BenchmarkDotNet.Artifacts\results\PLINQBenchmark.PLINQBenchmarkExample-report.html
+
+// * Detailed results *
+PLINQBenchmarkExample.SequentialComputation: DefaultJob
+Runtime = .NET 9.0.0 (9.0.24.52809), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI; GC = Concurrent Workstation
+Mean = 704.890 ms, StdErr = 3.533 ms (0.50%), N = 21, StdDev = 16.188 ms
+Min = 686.449 ms, Q1 = 692.332 ms, Median = 700.994 ms, Q3 = 713.092 ms, Max = 734.751 ms
+IQR = 20.760 ms, LowerFence = 661.192 ms, UpperFence = 744.232 ms
+ConfidenceInterval = [691.291 ms; 718.488 ms] (CI 99.9%), Margin = 13.599 ms (1.93% of Mean)
+Skewness = 0.77, Kurtosis = 2.01, MValue = 2.43
+-------------------- Histogram --------------------
+[678.748 ms ; 704.643 ms) | @@@@@@@@@@@@@@
+[704.643 ms ; 722.157 ms) | @@
+[722.157 ms ; 737.559 ms) | @@@@@
+---------------------------------------------------
+
+PLINQBenchmarkExample.ParallelComputation: DefaultJob
+Runtime = .NET 9.0.0 (9.0.24.52809), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI; GC = Concurrent Workstation
+Mean = 713.155 ms, StdErr = 3.562 ms (0.50%), N = 22, StdDev = 16.707 ms
+Min = 689.786 ms, Q1 = 701.568 ms, Median = 708.472 ms, Q3 = 723.913 ms, Max = 744.384 ms
+IQR = 22.345 ms, LowerFence = 668.051 ms, UpperFence = 757.430 ms
+ConfidenceInterval = [699.551 ms; 726.759 ms] (CI 99.9%), Margin = 13.604 ms (1.91% of Mean)
+Skewness = 0.36, Kurtosis = 1.76, MValue = 2
+-------------------- Histogram --------------------
+[681.960 ms ; 707.774 ms) | @@@@@@@@@@@
+[707.774 ms ; 730.965 ms) | @@@@@@@
+[730.965 ms ; 747.786 ms) | @@@@
+---------------------------------------------------
+
+// * Summary *
+
+BenchmarkDotNet v0.14.0, Windows 11 (10.0.26100.2894)
+11th Gen Intel Core i7-1165G7 2.80GHz, 1 CPU, 8 logical and 4 physical cores
+.NET SDK 9.0.100
+  [Host]     : .NET 9.0.0 (9.0.24.52809), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI
+  DefaultJob : .NET 9.0.0 (9.0.24.52809), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI
+
+
+| Method                | Mean     | Error    | StdDev   | Gen0        | Allocated |
+|---------------------- |---------:|---------:|---------:|------------:|----------:|
+| SequentialComputation | 704.9 ms | 13.60 ms | 16.19 ms | 212000.0000 |   1.24 GB |
+| ParallelComputation   | 713.2 ms | 13.60 ms | 16.71 ms | 212000.0000 |   1.24 GB |
+
+// * Hints *
+Outliers
+  PLINQBenchmarkExample.ParallelComputation: Default -> 1 outlier  was  removed (766.23 ms)
+
+// * Legends *
+  Mean      : Arithmetic mean of all measurements
+  Error     : Half of 99.9% confidence interval
+  StdDev    : Standard deviation of all measurements
+  Gen0      : GC Generation 0 collects per 1000 operations
+  Allocated : Allocated memory per single operation (managed only, inclusive, 1KB = 1024B)
+  1 ms      : 1 Millisecond (0.001 sec)
+
+// * Diagnostic Output - MemoryDiagnoser *
+
+
+// ***** BenchmarkRunner: End *****
+Run time: 00:00:47 (47.07 sec), executed benchmarks: 2
+
+Global total time: 00:00:53 (53.74 sec), executed benchmarks: 2
+// * Artifacts cleanup *
+Artifacts cleanup is finished
